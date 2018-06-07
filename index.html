@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Glyph Clicker</h1>
+    <div id="instructions">
+        <p>Welcome players. At the commencement of every game, you will be assigned 
+            a random number. There are four hieroglyphs below, each coordinate to 
+            a different numerical value. If you can match the right sequence of 
+            hieroglyphs to the number, you win the game. If not...
+        </p>
+    </div>
+    <div id="random-number"></div>
+    <div id="w-l"></div>
+    <div id="score">
+        <p>Your total score is...</p>
+        <p id="tally">0</p>
+    </div>
+    <div id="hieroglyphs">
+        <img id="falcon" class="glyph" src="https://en.wikipedia.org/w/extensions/wikihiero/img/hiero_G5.png?bcb90">
+        <img id="eye" class="glyph"
+        src="https://en.wikipedia.org/w/extensions/wikihiero/img/hiero_D10.png?8da3f">
+        <img id="priest" class="glyph"
+        src="https://en.wikipedia.org/w/extensions/wikihiero/img/hiero_C11.png?7c116">
+        <img id="ankh" class="glyph"
+        src="https://en.wikipedia.org/w/extensions/wikihiero/img/hiero_S34.png?d177d">
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
+
+</body>
+</html>

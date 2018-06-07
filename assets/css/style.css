@@ -1,0 +1,82 @@
+body {
+    background-image: url(http://www.desktop-screens.com/data/out/37/2807436-egyptian-wallpapers.jpg);
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+#instructions {
+    background-color: tan;
+    border: 10px double saddlebrown;
+    width: 30%;
+    margin-left: 12%;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+    float: left;
+    border-radius: 10%;
+}
+
+#random-number {
+    border-top-left-radius: 10%;
+    background-color: tan;
+    border: 10px double saddlebrown;
+    width: 15%;
+    height: 60px;
+    margin-left: 5%;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#hieroglyphs {
+    width: 30%;
+    margin-left: 5%;
+    background-color: tan;
+    border: 10px double saddlebrown;
+    padding: 20px;
+    justify-content: space-between;
+    float: left;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-right: 10%;
+}
+
+#score {
+    width: 30%;
+    margin-left: 5%;
+    background-color: tan;
+    border: 10px double saddlebrown;
+    padding: 20px;
+    justify-content: space-between;
+    float: left;
+    margin-right: 10%;
+}
+
+#w-l {
+    height: 110px;
+    width: 16%;
+    background-color: tan;
+    border: 10px double saddlebrown;
+    justify-content: space-between;
+    float: left;
+    border-top-right-radius: 10%;
+    margin-right: 10%;
+}
+
+img {
+    width: 50px;
+}
+
+img:hover {
+    opacity: .2;
+}
+
+img:active {
+    border: 1px black solid;
+}
+
