@@ -1,49 +1,101 @@
 $(document).ready(function() {
 
-    //We have to generate a random number, have it be unpredictable, and have it be high enough that the glyphs won't ever be larger than it. 
+    //click play to start the game.
+    $("#btn").click(function() {
 
-    var randomNumber = Math.floor(Math.random() * 31) 
-    + Math.floor(Math.random() * 31);
+        //Show our icons if they're not already visible.
+        $(".glyph").show();
+        $("#w-l").text("");
 
+        function clear() {
+            count = 0;
+            randomNumber = 1;
+            falconValue = 0;
+            eyeValue = 0;
+            priestValue = 0;
+            ankhValue = 0;
+            isGuessed = false;
+            isOver = false;
+        }
 
-    //Defining separate random numbers for each glyph icon. 
+        //set variables
+        var count = 0;
+        var randomNumber = Math.floor(Math.random() * 61) 
+        + 20;; 
 
-    var falconValue = Math.floor(Math.random() * 10 +1)
-    var eyeValue = Math.floor(Math.random() * 10 +1)
-    var priestValue = Math.floor(Math.random() * 10 +1)
-    var ankhValue = Math.floor(Math.random() * 10 +1)
+        var falconValue = Math.floor(Math.random() * 10 +1);
+        var eyeValue = Math.floor(Math.random() * 10 +1);
+        var priestValue = Math.floor(Math.random() * 10 +1);
+        var ankhValue = Math.floor(Math.random() * 10 +1);
 
-    var count = 0;
+        var isGuessed = false;
+        var isOver = false;
 
-    var randomNumberDisplay = $("#random-number");
-
-    randomNumberDisplay.text(randomNumber);
-
-    console.log(falconValue, eyeValue, priestValue, ankhValue);
-
-    //Each button works for itself, but starting an if/else statement with count after the button click functions only returns the initialized value for count, that is, 0.
-
-    //It has to be a scoping problem.
-
-    $("#falcon").click(function() {
-        count += falconValue;
+        //display count
         $("#tally").text(count);
-    });
 
-    $("#eye").click(function() {
-        count += eyeValue;
-        $("#tally").text(count);
-    });
+        //generate a random number the user has to guess.
 
-    $("#priest").click(function() {
-        count += priestValue;
-        $("#tally").text(count);
-    });
 
-    $("#ankh").click(function() {
-        count += ankhValue;
-        $("#tally").text(count);
-    });
+        //display random number.
+        var randomNumberDisplay = $("#random-number");
+        randomNumberDisplay.text(randomNumber);
 
+        //Defining separate random numbers for each glyph icon. 
+
+
+
+        function gameOutcomes() {
+            if (count === randomNumber) {
+                console.log("Game outcomes thinks count equals random number.")
+                isGuessed = true;
+            } 
+            if (count > randomNumber) {
+                console.log("gameOutcomes thinks count is greater than the random number.");
+                isOver = true;
+            } 
+        }
+
+        $("#falcon").click(function() {
+            count += falconValue;
+            $("#tally").text(count);
+        });
+
+        $("#eye").click(function() {
+            count += eyeValue;
+            $("#tally").text(count);
+        });
+
+        $("#priest").click(function() {
+            count += priestValue;
+            $("#tally").text(count);
+        });
+
+        $("#ankh").click(function() {
+            count += ankhValue;
+            $("#tally").text(count);
+        });
+
+        $(".glyph").click(function() {
+            gameOutcomes();
+            if (isGuessed === true) {
+                $("#w-l").text("You win!");
+                $(".glyph").hide();
+                clear();
+
+            }
+            if (isOver === true) {
+                $("#w-l").text("You lose.");
+                $(".glyph").hide();
+                clear();
+            }
+            ("#btn").show();
+        });
+
+    });
 });
+
+
+
+
 
