@@ -24,13 +24,14 @@ $(document).ready(function() {
 
         //set variables
         var count = 0;
-        var randomNumber = Math.floor(Math.random() * 61) 
+        var randomNumber = Math.floor(Math.random() * 100) 
         + 20;; 
 
-        var falconValue = Math.floor(Math.random() * 10 +1);
-        var eyeValue = Math.floor(Math.random() * 10 +1);
-        var priestValue = Math.floor(Math.random() * 10 +1);
-        var ankhValue = Math.floor(Math.random() * 10 +1);
+        var falconValue = Math.floor(Math.random() * 12 + 1);
+        var eyeValue = Math.floor(Math.random() * 12 + 1);
+        var priestValue = Math.floor(Math.random() * 12 + 1);
+        var ankhValue = Math.floor(Math.random() * 12 + 1);
+        console.log(falconValue, eyeValue, priestValue, ankhValue);
 
         var isGuessed = false;
         var isOver = false;
