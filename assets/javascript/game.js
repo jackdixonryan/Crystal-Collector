@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    var wins = 0;
+    var losses = 0;
+
     //click play to start the game.
     $("#btn").click(function() {
         $("#btn").hide();
@@ -40,7 +43,7 @@ $(document).ready(function() {
 
         //display random number.
         var randomNumberDisplay = $("#random-number");
-        randomNumberDisplay.text(randomNumber);
+        randomNumberDisplay.html("<h3>" + randomNumber + "</h3>");
 
         //Defining separate random numbers for each glyph icon. 
 
@@ -80,17 +83,23 @@ $(document).ready(function() {
         $(".glyph").click(function() {
             gameOutcomes();
             if (isGuessed === true) {
-                $("#w-l").text("You win!");
+                $("#w-l").html("<h3>You win!</h3>");
+                wins++;
+                $("#wins").text(wins)
                 $(".glyph").hide();
                 clear();
                 $("#btn").show();
             }
             if (isOver === true) {
-                $("#w-l").text("You lose.");
+                $("#w-l").html("<h3>You lose.</h3>");
+                losses++;
+                $("#losses").text(losses);
                 $(".glyph").hide();
                 clear();
                 $("#btn").show();
             }
+            console.log("WINS: " + wins);
+            console.log("LOSSES: " + losses);
         });
 
     });

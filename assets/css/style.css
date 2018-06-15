@@ -1,158 +1,131 @@
 body {
-    background-image: url(http://www.desktop-screens.com/data/out/37/2807436-egyptian-wallpapers.jpg);
+    background-image: url(https://thumbs.dreamstime.com/b/egyptian-background-14201574.jpg);
     background-size: 100%;
 }
 
 h1 {
+    margin: 0px;
     font-size: 50px;
     padding: 10px;
     text-align: center;
     background-color: gold;
     border-bottom: 3px black solid;
-}
-
-div {
-    margin: 3px;
-}
-
-#triptych {
-    width: 100% auto;
+    margin-bottom: 30px;
 }
 
 #instructions {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    text-align: center;
+    float: none;
     background-color: tan;
     border: 5px double saddlebrown;
     font-size: 20px;
     line-height: 1.3;
-    padding: 10px;
-    width: 45%;
-    float: left;
+}
+
+#total-score {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    text-align: center;
+    float: none;
+    background-color: tan;
+    border: 5px double saddlebrown;
 }
 
 #start {
     background-color: tan;
     border: 5px double saddlebrown;
-    padding: 20px;
-    height: 100px;
-    width: 45%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
-    float: left;
+    padding: 20px;
 }   
-
-#random-number {
-    background-color: tan;
-    border: 5px double saddlebrown;
-    height: 100px;
-    width: 45%;
-    padding: 20px;
-    float: left;
-}
-
-#w-l {
-    height: 100px;
-    padding: 20px;
-    width: 60%;
-    background-color: tan;
-    border: 5px double saddlebrown;
-    float: left;
-}
-
-#hieroglyphs {
-    width: 30%;
-    background-color: tan;
-    border: 5px double saddlebrown;
-    padding: 20px;
-    justify-content: space-between;
-    float: left;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-}
-
-#score {
-    width: 90%;
-    background-color: tan;
-    border: 5px double saddlebrown;
-    float: left;
-    text-align: center;
-    font-size: 30px;
-
-}
 
 #btn {
     font-size: 20px;
     padding: 20px;
+    background: linear-gradient(tan, navajowhite);
+    border: 3px outset navajowhite;
+}
+
+#btn:hover {
+    font-weight: bold;
+}
+
+#btn:target {
+    border: 3px inset navajowhite;
+}
+
+#random-number {
+    background-color: tan;
+    border: 5px double saddlebrown;
+    width: 40%;
+    margin-left: 10%;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    float: left;
+    clear: both;
+}
+
+#w-l {
+    background-color: tan;
+    border: 5px double saddlebrown;
+    text-align: center;
+    font-size: 30px;
+    height: 100px;
+    width: 39%;
+    float: left;
+}
+
+#hieroglyphs {
+    background-color: tan;
+    border: 5px double saddlebrown;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.glyph {
+    margin-right: 6%;
+    margin-left: 6%;
+    width: 65px;
+    padding: 10px;
+    border-radius: 25%;
+    border: 3px outset navajowhite;
+}
+
+.glyph:hover {
+    opacity: .6;
+}
+
+.glyph:active {
+    background: linear-gradient(tan, navajowhite);
+    border: 3px inset navajowhite;
+}
+
+#score {
+    font-size: 20px;
+    text-align: center;
+    background-color: tan;
+    border: 5px double saddlebrown;
+    width: 80%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    clear: both;
 }
 
 
-img {
-    width: 50px;
+div {
+    margin: 3px;
 }
 
-img:hover {
-    opacity: .2;
-}
-
-img:active {
-    border: 1px black solid;
-}
-
-@media screen and (max-width: 923px) {
-
-    body {
-        background-image: url(https://thumbs.dreamstime.com/b/egyptian-background-14201574.jpg);
-        background-size: 100%;
-    }
-
-    #instructions {
-        width: 80%;
-        margin-right: 5%;
-        margin-left: 5%;
-        float: none;
-    }
-
-    #random-number {
-        width: 30%;
-        margin-left: 10%;
-        float: left;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 40px;
-        height: 80px;
-    }
-
-    #w-l {
-        width: 30%;
-        margin-left: none;
-        float: left;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    #hieroglyphs {
-        width: 67%;
-        margin-left: 10%;
-    }
-
-    .glyph {
-        margin-right: 7%;
-        margin-left: 7%;
-    }
-
-    #score {
-        width: 70%;
-        padding: 10px;
-        margin-left: 10%;
-    }
-
-    #start {
-        width: 67%;
-        margin-left: 10%;
-        text-align: center;
-    }   
-
-    #btn {
-        font-size: 20px;
-        padding: 20px;
-    }
-
-}
