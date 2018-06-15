@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     //click play to start the game.
     $("#btn").click(function() {
+        $("#btn").hide();
 
         //Show our icons if they're not already visible.
         $(".glyph").show();
@@ -82,14 +83,14 @@ $(document).ready(function() {
                 $("#w-l").text("You win!");
                 $(".glyph").hide();
                 clear();
-
+                $("#btn").show();
             }
             if (isOver === true) {
                 $("#w-l").text("You lose.");
                 $(".glyph").hide();
                 clear();
+                $("#btn").show();
             }
-            ("#btn").show();
         });
 
     });
