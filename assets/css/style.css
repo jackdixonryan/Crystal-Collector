@@ -1,9 +1,12 @@
+
+
 body {
     background-image: url(https://thumbs.dreamstime.com/b/egyptian-background-14201574.jpg);
     background-size: 100%;
 }
 
 h1 {
+    font-family: 'Caesar Dressing', cursive;
     margin: 0px;
     font-size: 50px;
     padding: 10px;
@@ -27,6 +30,7 @@ h1 {
 }
 
 #total-score {
+    font-family: 'Caesar Dressing', cursive;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
@@ -48,6 +52,7 @@ h1 {
 }   
 
 #btn {
+    font-family: 'Caesar Dressing', cursive;
     font-size: 20px;
     padding: 20px;
     background: linear-gradient(tan, navajowhite);
@@ -63,6 +68,7 @@ h1 {
 }
 
 #random-number {
+    font-family: 'Caesar Dressing', cursive;
     background-color: tan;
     border: 5px double saddlebrown;
     width: 40%;
@@ -75,6 +81,7 @@ h1 {
 }
 
 #w-l {
+    font-family: 'Caesar Dressing', cursive;
     background-color: tan;
     border: 5px double saddlebrown;
     text-align: center;
@@ -113,6 +120,7 @@ h1 {
 }
 
 #score {
+    font-family: 'Caesar Dressing', cursive;
     font-size: 20px;
     text-align: center;
     background-color: tan;
